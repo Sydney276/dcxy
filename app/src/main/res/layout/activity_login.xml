@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="多彩校园"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#7379c2"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login_phone_et"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_height="50dp"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:background="@drawable/edite_background"
+            android:padding="10dp"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/login_pwd_et"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:hint="请输入密码"
+            android:background="@drawable/edite_background"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:background="@drawable/login_btn_background"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:onClick="click"
+            />
+        <TextView
+            android:id="@+id/login_rjsm"
+            android:onClick="rjsm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="软件说明"
+            android:layout_gravity="right"
+            android:textColor="@color/zhise"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

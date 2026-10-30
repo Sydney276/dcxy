@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/zhise"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/main_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="吴亦凡"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/main_tv_deviceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/main_tv_name"
+            android:text="(设备账号：100008)"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/main_tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:onClick="getBalance"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/main_tv_deviceId"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+
+
+        <ImageView
+            android:id="@+id/main_iv_more"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/more"
+            android:onClick="show"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingHorizontal="20dp">
+        <Button
+            android:id="@+id/main_bt_bsm"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="被扫码"
+            android:onClick="click"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/main_bsm_bg"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/main_bt_sm"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="扫码"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="click"
+            android:background="@drawable/main_sm_bg"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        >
+        <TextView
+            android:id="@+id/main_tv_deviceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（暂未设置常用设备）"
+            android:onClick="click"
+            android:gravity="center"
+            android:textSize="25sp"/>
+        <Button
+            android:id="@+id/main_bt_start_common"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:text="启动常用"
+            android:onClick="click"
+            android:background="@drawable/main_start_btn_bg"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:paddingHorizontal="10dp">
+        <Button
+            android:id="@+id/main_bt_add_common"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加常用"
+            android:background="@drawable/btn"
+            android:onClick="click"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/main_bt_enter_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加入Q群"
+            android:background="@drawable/btn"
+            android:onClick="click"
+            android:layout_marginHorizontal="5dp"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/main_bt_share_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享软件"
+            android:textColor="@color/white"
+            android:background="@drawable/btn"
+            android:onClick="click"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

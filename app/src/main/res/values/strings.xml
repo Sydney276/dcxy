@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">多喝热水</string>
+    <string name="about">关于</string>
+
+    <string name="about_appinfo">应用信息</string>
+    <string name="about_version">版本</string>
+    <string name="about_1">1.0</string>
+    <string name="about_app">关于应用</string>
+    <string name="about_balabala">原来的app阻挡了我打热水的速度，还有广告，这怎么能忍！！！</string>
+    <string name="about_developer">开发者</string>
+    <string name="about_me">关于我</string>
+    <string name="about_loc">唯唯诺诺，思想不成熟，性格不稳定~</string>
+    <string name="about_email">QQ交流群</string>
+    <string name="about_email2">群号：644975951，欢迎学习和自行DIY</string>
+    <string name="about_code">源代码</string>
+    <string name="about_codeinfo">https://gitee.com/JieKuiChance/DuoCaiXiaoYuanFastApp</string>
+    <string name="instruction_sm">说明</string>
+    <string name="instructions_wjmm">关于忘记密码</string>
+    <string name="instructions_wjmm_1">需要你自行到多彩校园app重新设置密码。</string>
+    <string name="instructions_xxwt">关于信息问题</string>
+    <string name="instructions_xxiwt_1">本程序的请求接口都是官网接口，并没有其他接口，不会造成信息泄露，你也可以自行下载源码查看，或进行二次打包。此软件主要用途是以使用方便和学习交流为目的。</string>
+    <string name="instructions_czwt">关于充值问题</string>
+    <string name="instructions_czwt_1">需要自行去多彩校园app内进行充值。</string>
+    <string name="instructions_szcy">关于设置常用</string>
+    <string name="instructions_szcy_1">即自己经常去哪个饮水设备打水就可设置为哪个；这样就直接启动，不需要再扫码启动了，更加方便快捷，通常是设置寝室的设备为常用。</string>
+    <string name="instructions_qtwt">其他问题</string>
+    <string name="instructions_qtwt_1">加QQ交流（644975951）讨论</string>
+    <string name="instructions_xmdz">项目地址</string>
+    <string name="instructions_xmdz_1">https://gitee.com/JieKuiChance/DuoCaiXiaoYuanFastApp</string>
+
+</resources>
